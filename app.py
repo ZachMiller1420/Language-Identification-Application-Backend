@@ -5,7 +5,7 @@ import pickle
 app = Flask(__name__)
 CORS(app)
 
-# Load your machine learning model
+# Load the machine learning model 
 global Lrdetect_Model
 with open('model.pckl', 'rb') as model_file:
     Lrdetect_Model = pickle.load(model_file)
